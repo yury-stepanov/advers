@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-import App from './components/App'
+import Main from './main'
 
 // main render function
 const render = Component => {
@@ -10,21 +10,21 @@ const render = Component => {
     // it will try to update it with the help of https://github.com/gaearon/react-deep-force-update
     // so it will ignore shouldComponentUpdate method
     <AppContainer>
-      <Component />
+      <Main />
     </AppContainer>,
     document.getElementById('app')
   )
 }
 
 // initially render our app
-render(App)
+render(Main)
 
 // setting devServer: { hot: true }
 // will expose hot module.hot hook to our code
 if (module.hot) {
   // this function will mark `App` module as invalid during update
   // and will call the update handler in order to handle new code
-  module.hot.accept('./components/App', () => {
-    render(App)
+  module.hot.accept('./main', () => {
+    render(Main)
   })
 }
