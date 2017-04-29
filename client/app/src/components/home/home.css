@@ -1,0 +1,27 @@
+.home {
+  background-color: rgb(11, 11, 11);
+  background-image: radial-gradient(
+    circle at right,
+    rgb(25, 25, 25),
+    rgb(11, 11, 11) 35%
+  );
+  color: rgb(240, 240, 240);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  font-size: 2rem;
+  margin: auto;
+  flex-flow: column;
+  justify-content: center;
+  padding-left: 5rem;
+  text-rendering: optimizeLegibility;
+}
+
+.home__title {
+  margin-top: -5rem;
+}
+
+.home__contact {
+  margin-top: 1rem;
+}
+
