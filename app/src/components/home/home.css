@@ -9,11 +9,11 @@
   margin: 0;
   height: 100vh;
   display: flex;
-  font-size: 1.7rem;
+  font-size: 4vh;
   margin: auto;
   flex-flow: column;
   justify-content: center;
-  padding-left: 5rem;
+  padding: 0 5rem;
   text-rendering: optimizeLegibility;
 }
 
@@ -26,6 +26,7 @@
 }
 
 .home__link {
-  margin: 0 5px;
+  padding: 0 5px;
+  font-size: 3.5vh;
 }
 

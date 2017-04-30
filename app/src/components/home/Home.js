@@ -7,7 +7,11 @@ const Home = () => (
     <h2 className="home__title">Hi, my name is Yury</h2>
     <section className="home__about-myself">
       I'am a Software Engineer, working in the
-      <Link to="https://www.epam.com/" openInNewTab> EPAM </Link> <br />
+      <Link className="home__link" to="https://www.epam.com/" openInNewTab>
+        {' '}EPAM{' '}
+      </Link>
+      {' '}
+      <br />
       on my way of fighting entropy by occasionally building stuff.
     </section>
     <section className="home__contact">
