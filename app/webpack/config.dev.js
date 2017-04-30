@@ -7,15 +7,6 @@ const autoprefixer = require('autoprefixer')
 
 module.exports = function createConfig({ distFolder, rootFolder, srcFolder }) {
   return webpackMerge(createBaseConfig.apply(null, arguments), {
-    entry: [
-      // hot reloading stuff
-      'react-hot-loader/patch',
-      'webpack-dev-server/client?http://localhost:8080',
-      'webpack/hot/only-dev-server',
-
-      // your code
-      'index.js'
-    ],
     module: {
       rules: [
         {
@@ -34,6 +25,15 @@ module.exports = function createConfig({ distFolder, rootFolder, srcFolder }) {
         }
       ]
     },
+    entry: [
+      // hot reloading stuff
+      'react-hot-loader/patch',
+      'webpack-dev-server/client?http://localhost:8080',
+      'webpack/hot/only-dev-server',
+
+      // your code
+      'index.js'
+    ],
     devtool: 'inline-source-map',
     // configure `webpack-dev-server
     devServer: {

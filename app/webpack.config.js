@@ -23,5 +23,6 @@ const configOptions = {
 }
 
 const configFactory = configFactories[env] || prod
+const config = configFactory(configOptions)
 
-module.exports = configFactory(configOptions)
+module.exports = config

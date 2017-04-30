@@ -21,7 +21,7 @@ module.exports = function createConfig({ distFolder, srcFolder, rootFolder }) {
           test: /\.js$/,
           use: 'babel-loader',
           include: resolve(rootFolder, srcFolder)
-        },
+        }
       ]
     },
     // with that we are sayning to webpack to look into 2 folders for modules
