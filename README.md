@@ -1,2 +1,0 @@
-# advers
-My personal site

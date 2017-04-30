@@ -1,8 +1,15 @@
 import React from 'react'
+import classnames from 'classnames'
 import './link.css'
 
-const Link = ({ to, openInNewTab, children }) => (
-  <a href={to} target={openInNewTab && '_blank'} className="link">{children}</a>
+const Link = ({ to, openInNewTab, children, className }) => (
+  <a
+    href={to}
+    target={openInNewTab && '_blank'}
+    className={classnames('link', className)}
+  >
+    {children}
+  </a>
 )
 
 export default Link

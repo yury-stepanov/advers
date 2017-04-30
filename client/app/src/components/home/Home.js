@@ -12,13 +12,21 @@ const Home = () => (
     </section>
     <section className="home__contact">
       <span className="contact-me">Contact -</span>
-      <Link to="https://www.linkedin.com/in/yury-stepanov" openInNewTab>
+      <Link
+        className="home__link"
+        to="https://www.linkedin.com/in/yury-stepanov"
+        openInNewTab
+      >
         Linkedin
       </Link>
-      <Link to="https://github.com/yury-stepanov" openInNewTab>
+      <Link
+        className="home__link"
+        to="https://github.com/yury-stepanov"
+        openInNewTab
+      >
         GitHub
       </Link>
-      <Link to="mailto:advers191@gmail.com">Email</Link>
+      <Link className="home__link" to="mailto:advers191@gmail.com">Email</Link>
     </section>
   </div>
 )

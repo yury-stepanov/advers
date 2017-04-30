@@ -1,7 +1,7 @@
 .home {
   background-color: rgb(11, 11, 11);
   background-image: radial-gradient(
-    circle at right,
+    circle at right top,
     rgb(25, 25, 25),
     rgb(11, 11, 11) 35%
   );
@@ -9,7 +9,7 @@
   margin: 0;
   height: 100vh;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: auto;
   flex-flow: column;
   justify-content: center;
@@ -23,5 +23,9 @@
 
 .home__contact {
   margin-top: 1rem;
+}
+
+.home__link {
+  margin: 0 5px;
 }
 
