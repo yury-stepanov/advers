@@ -1,0 +1,28 @@
+a {
+    transition: color cubic-bezier(0.19, 1, 0.22, 1), 0.5s;
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    position: relative;
+}
+
+a:hover {
+    color: inherit;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: rgb(180, 180, 180);
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
